@@ -1,11 +1,14 @@
+
 // Esercizio database email 
 
 let emailUser = prompt("Inserisci la tua e-mail");
-let listaDiEmail = ["jimmy123@gmai.com", "pincopallothebest@gmail.com", "atticidicittà@gmail.com", "mazinga69@gmail.com", "banana1994@gmail.com"];
+let listaDiEmail = ["jimmy123@gmail.com", "pincopallothebest@gmail.com", "atticidicittà@gmail.com", "mazinga69@gmail.com", "banana1994@gmail.com"];
 
-let presenza = listaDiEmail.includes(emailUser);
-
-document.getElementById("email_user").innerHTML = presenza;
+for (let i = 0; i <= listaDiEmail.length; i++){
+        if (emailUser == listaDiEmail[i]){
+                document.getElementById("email_user").innerHTML = true;
+        }
+}
 
 
 // Minigioco del tiro di dadi
